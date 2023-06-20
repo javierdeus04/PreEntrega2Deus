@@ -1,0 +1,200 @@
+@import url(./_base.scss);
+
+.header-logo {
+    align-self: center;
+    justify-self: center;
+    margin-top: 60px;
+}
+
+@media (min-width: 992px) {
+
+    .header-logo {
+        margin-top: 0;
+    }
+}
+
+
+.header-icons {
+    display: flex;
+    align-self: center;
+    padding: 10px;
+}
+
+.header-icons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.banner-background {
+    background-image: url("../../img/backgrounds/videojuegos_1920x1080.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-title {
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Monomaniac One', sans-serif;
+    color: crimson;
+    text-shadow: black -0.1em 0.1em 2px, black 0.1em 0.1em 2px;
+    padding: 10px;
+    margin: 0;
+}
+
+.carousel-caption {
+    & .item-title {
+        text-shadow: black -0.1em 0.1em 2px, black 0.1em 0.1em 2px;
+    }
+
+    & .item-description {
+        background-color: rgba(0, 0, 0, 0.479);
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
+
+
+
+.card-content {
+
+    border: solid rgba(0, 0, 0, 0.205) 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45vw;
+    align-self: center;
+
+    & .card-image {
+        width: 10em;
+        margin: 5px;
+
+    }
+
+    & .card-title {
+        background-color: blue;
+        color: white;
+        padding: 5px;
+        margin-left: 2px;
+        margin-right: 2px;
+        border-radius: 3px;
+    }
+
+    & .card-list {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 8px;
+
+        & .version {
+            font-weight: 800;
+        }
+
+    }
+
+    & .price {
+        display: block;
+        margin: 10px;
+        color: $pink-500;
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    & .btn {
+        margin-bottom: 8px;
+        background-color: $pink-500;
+        border: none;
+    }
+}
+
+
+
+
+
+
+.category-card {
+
+    & .category-card-title {
+        font-size: 1.1rem;
+        text-align: center;
+        font-weight: 800;
+        color: $pink-500;
+        text-decoration: underline;
+    }
+
+    & .category {
+
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+        box-shadow: $pink-500 0.1em 0.1em 5px;
+
+        & .category-image {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+        }
+
+        & .category-title {
+            color: blue;
+            text-transform: uppercase;
+            padding: 2px;
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            text-shadow: rgb(167, 167, 167) 0.1em 0.1em 2px;
+        }
+    }
+}
+
+
+.instagram {
+    display: flex;
+    flex-direction: column;
+
+    & .instagram-media {
+        align-self: center;
+    }
+}
+
+
+
+.footer-section {
+
+    margin-top: 20px;
+
+    & .footer-section-information {
+        margin: 0;
+        padding: 0;
+
+        & .days {
+            text-transform: uppercase;
+        }
+    }
+
+
+    & .footer-section-title {
+        color: $pink-500;
+        text-transform: uppercase;
+    }
+
+    & .outstanding {
+        font-size: 2rem;
+        background-color: $pink-500;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: italic;
+    }
+}
+
